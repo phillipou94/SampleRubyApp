@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.0.rc1'
+gem 'bootstrap-sass',  '3.2.0.0'
+
 # Use sqlite3 as the database for Active Record
 gem 'sass-rails', '~> 5.0.0.beta1'
 # Use Uglifier as compressor for JavaScript assets
@@ -43,6 +45,13 @@ group :development, :test do
   # Use SCSS for stylesheets (only for development)
   gem 'sqlite3'
 
+
+end
+
+group :test do
+   gem 'minitest-reporters', '1.0.5'
+   gem 'mini_backtrace',     '0.1.3'
+   gem 'guard-minitest',     '2.3.1'
 end
 
 group :production do
